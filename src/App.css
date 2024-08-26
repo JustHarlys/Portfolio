@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +8,14 @@
 body {
   margin: 0;
   font-family: 'Montserrat';
+}
+
+main {
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
 }
 
 .nav-container {
@@ -25,6 +34,7 @@ body {
 
 .logo-text {
   cursor: pointer;
+  color: red;
 }
 
 .nav-items {
@@ -38,10 +48,134 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/assets/Hero-img.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+  gap: 200px;
 }
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 15px;
+  border-radius: 100px;
+  border: 1px solid black;
+  font-family: 'Montserrat';
+}
+
+.cv {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.projects {
+  color: black;
+  background-color: white;
+}
+
+.hero-text > * {
+  margin: 0;
+}
+
+.hero-p {
+  font-weight: bold;
+  font-size: 35px;
+  width: 60%;
+}
+
+.hero-p-2 {
+  font-weight: bold;
+}
+
+.name {
+  color: red;
+}
+
+.hero-img {
+  width: 270px;
+  border-radius: 200px;
+}
+
+.about-me-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-h1 {
+  color: red;
+}
+
+.about-me-p {
+  width: 50%;
+  text-align: center;
+}
+
+.education-h1 {
+  color: red;
+  text-align: center;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 20px;
+}
+
+
+.course-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 30px;
+  width: auto;
+}
+
+.course-container > * {
+  margin: 0;
+}
+
+.course-place {
+  font-size: 12px;
+}
+
+.date-container {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dates {
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+.date-container > *{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
