@@ -1,4 +1,4 @@
-function Nav() {
+function Nav({darkModeToggle, handleDarkModeToggle}) {
   return (
     <>
     <div className="nav-container">
@@ -9,7 +9,11 @@ function Nav() {
             <li className="nav-item">About</li>
             <li className="nav-item">Projects</li>
             <li className="nav-item">Contact</li>
-            <button>{"</>"}</button>
+            <button 
+            className="toggle-button" 
+            onClick={handleDarkModeToggle}
+            style={{color: darkModeToggle ? 'red' : 'white'}}
+            >{"</>"}</button>
 
         </ul>
     </div>
