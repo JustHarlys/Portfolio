@@ -19,5 +19,19 @@ export default [
         concept : "Una página que alberga todos mis links",
         img : "../src/assets/harlys-links.png",
         github : "https://github.com/JustHarlys/Instagram-Link"
+    },
+    {
+        title: "Weight Tracker",
+        link : "",
+        concept : "Web App para llevar un registro de peso corporal",
+        img: "../src/assets/weight-tracker.png",
+        github : "https://github.com/JustHarlys/Weight-Tracker"
+    },
+    {
+        title: "Trip Journal",
+        link: "",
+        concept: "Aplicación web para hacer notas de viajes",
+        img: "../src/assets/trip-journal.png",
+        github: "https://github.com/JustHarlys/Trip-Journal"
     }
 ]

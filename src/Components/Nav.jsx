@@ -1,14 +1,16 @@
-function Nav({darkModeToggle, handleDarkModeToggle}) {
+function Nav({darkModeToggle, handleDarkModeToggle, changePages, handleHome, handleProjects}) {
+
+
   return (
     <>
     <div className="nav-container">
 
         <p className="logo-text">HARLYS</p>
         <ul className="nav-items">
-            <li className="nav-item selected">Home</li>
-            <li className="nav-item">About</li>
-            <li className="nav-item">Projects</li>
-            <li className="nav-item">Contact</li>
+            <li className="nav-item" onClick={handleProjects} style={{color: !changePages ? 'gray' : 'red'}}>Home</li>
+            <li className="nav-item" onClick={handleHome
+              
+            } style={{color: changePages ? 'gray' : 'red'}}>Projects</li>
             <button 
             className="toggle-button" 
             onClick={handleDarkModeToggle}

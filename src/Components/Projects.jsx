@@ -9,7 +9,7 @@ function Projects({concept, link, title, github, img}) {
 
             <div className="button-content">
             <a href={link} className='overlay-btn' target='_blank'><i className="fa-solid fa-globe"></i></a>
-            <p className='button-text'>Website</p>
+            <p className='button-text'>{link = link === "" ? "No disponible" : "Website" }</p>
             </div>
 
             <div className="button-content">

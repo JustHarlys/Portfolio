@@ -16,6 +16,7 @@ const courses = education.map(course => {
   endYear={course.endDate}
   course={course.course}
   place={course.place}
+
   />
 })
 
@@ -32,15 +33,31 @@ const proyectos = projects.map(proyecto => {
 
 function App() {
 
+  const [changePages, setChangePages] = useState(true)
+
   const [darkModeToggle, setDarkModeToggle] = useState(true)
 
   function handleDarkModeToggle() {
     setDarkModeToggle(prevDarkMode => !prevDarkMode)
   }
 
+  function handleHome() {
+    setChangePages(false)
+  }
+
+  function handleProjects() {
+    setChangePages(true)
+  }
+
   return (
     <>
-    <Nav darkModeToggle={darkModeToggle} handleDarkModeToggle={handleDarkModeToggle}/>
+    <Nav 
+    darkModeToggle={darkModeToggle} 
+    handleDarkModeToggle={handleDarkModeToggle} 
+    changePages={changePages}
+    handleHome={handleHome}
+    handleProjects={handleProjects}
+    />
     <Hero />
     <AboutMe />
 
