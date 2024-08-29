@@ -6,6 +6,8 @@ import Education from './Components/Education'
 import education from './data/education'
 import Projects from './Components/Projects'
 import projects from './data/projects'
+import ProjectsWindow from './Components/ProjectsWindow'
+import projectsWindows from "./data/projectsWindows"
 import { nanoid } from 'nanoid'
 import { useState } from 'react'
 
@@ -40,6 +42,19 @@ function App() {
     />
   })
 
+  const proyectosWindow = projectsWindows.map(proyectoWindow => {
+    return <ProjectsWindow 
+    key={nanoid()}
+    title={proyectoWindow.title}
+    concept={proyectoWindow.concept}
+    link={proyectoWindow.link}
+    img={proyectoWindow.img}
+    github={proyectoWindow.github}
+    description={proyectoWindow.description}
+    darkModeToggle={darkModeToggle}
+    />
+  })
+
 
 
   function handleDarkModeToggle() {
@@ -65,7 +80,12 @@ function App() {
     handleHome={handleHome}
     handleProjects={handleProjects}
     />
-    <Hero darkModeToggle={darkModeToggle}/>
+
+    {
+      changePages ?
+      <> 
+      
+      <Hero darkModeToggle={darkModeToggle}/>
     <AboutMe darkModeToggle={darkModeToggle}/>
 
 
@@ -81,6 +101,16 @@ function App() {
     <div className="projects-container" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>
     {proyectos}
     </div>
+      </>
+
+      : 
+      <>
+      <h1 className='projects-h1'>Proyectos</h1>
+      {proyectosWindow}
+      </> 
+
+}
+    
     </>
   )
 }

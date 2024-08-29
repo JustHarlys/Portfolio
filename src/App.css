@@ -41,19 +41,41 @@ button {
   position: fixed;
   width: 50%;
   z-index: 1;
+  flex-shrink: 0;
 }
 
 .selected {
   color: var(--red);
 }
 
-.toggle-button {
+.button-toggle {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+.icon-container {
+  width: 30px;
+  height: 30px;
+}
+
+.toggle-button-dark {
   color: red;
   background-color: transparent;
   border: none;
-  font-size: 1.25em;
-  transition: 1s ease;
+  border-radius: 400px;
+
 }
+
+.toggle-button-light {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 400px;
+}
+
+
 
 .logo-text {
   cursor: pointer;
@@ -68,6 +90,7 @@ button {
 .nav-item {
   list-style: none;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .hero {
@@ -117,11 +140,13 @@ button {
 .hero-p {
   font-weight: bold;
   font-size: 35px;
+  transition: 1s ease;
 
 }
 
 .hero-p-2 {
   font-weight: bold;
+  transition: 1s ease;
 }
 
 .name {
@@ -144,10 +169,12 @@ button {
 
 .about-me-h1 {
   color: var(--red);
+  transition: 1s ease;
 }
 
 .about-me-p {
   text-align: center;
+  transition: 1s ease;
 }
 
 .education-h1 {
@@ -313,6 +340,14 @@ button {
 .project-concept {
   text-align: center;
   font-size: 18px;
+  transition: 1s ease;
+}
+
+
+.project-title {
+  font-weight: bold;
+  font-size: 20px;
+  transition: 1s ease;
 }
 
 .project-link {
@@ -339,9 +374,10 @@ button {
   color: var(--red);
 }
 
-.project-title {
-  font-weight: bold;
-  font-size: 20px;
+.projects-windows-container {
+  padding: 40px;
+  background-color: var(--red);
+  color: white;
 }
 
 
@@ -354,7 +390,7 @@ button {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .toggle-button {
+  .button-toggle {
     animation: logo-spin infinite 6s linear
   }
 }
@@ -417,7 +453,6 @@ button {
     padding: 15px;
 
   }
-
 
 }
 
