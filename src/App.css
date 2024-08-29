@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --red : rgb(230, 71, 71)
+}
+
 #root {
   max-width: 50%;
   margin: 0 auto;
@@ -12,6 +16,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat';
+
 }
 
 main {
@@ -27,12 +32,19 @@ button {
   display: flex;
   color: rgb(187, 181, 181);
   justify-content: space-between;
-  padding: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
   font-weight: bold;
+  transition: 1s ease;
+  position: fixed;
+  width: 50%;
+  z-index: 1;
 }
 
 .selected {
-  color: red;
+  color: var(--red);
 }
 
 .toggle-button {
@@ -40,6 +52,7 @@ button {
   background-color: transparent;
   border: none;
   font-size: 1.25em;
+  transition: 1s ease;
 }
 
 .logo-text {
@@ -63,6 +76,7 @@ button {
   align-items: center;
   padding: 150px;
   gap: 200px;
+  transition: 1s ease;
 }
 
 .hero-text {
@@ -86,7 +100,7 @@ button {
 }
 
 .cv {
-  background-color: red;
+  background-color: var(--red);
   color: white;
   border: none;
 }
@@ -111,7 +125,7 @@ button {
 }
 
 .name {
-  color: red;
+  color: var(--red);
 }
 
 .hero-img {
@@ -125,10 +139,11 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 1s ease;
 }
 
 .about-me-h1 {
-  color: red;
+  color: var(--red);
 }
 
 .about-me-p {
@@ -136,8 +151,10 @@ button {
 }
 
 .education-h1 {
-  color: red;
+  color: var(--red);
   text-align: center;
+  margin: 0;
+  transition: 1s ease;
 }
 
 .education-container {
@@ -148,6 +165,7 @@ button {
   grid-row-gap: 0px;
   gap: 20px;
   place-items: center;
+  transition: 1s ease;
 }
 
 
@@ -156,7 +174,7 @@ button {
   flex-direction: column;
   padding: 30px;
   width: auto;
-  background-color: rgb(230, 71, 71);
+  background-color: var(--red);
   color: white;
   width: 100%;
   min-height: 150px;
@@ -189,6 +207,7 @@ button {
   padding: 20px;
   gap: 20px;
   place-items: center;
+  transition: 1s ease;
 }
 
 .project-container {
@@ -203,8 +222,21 @@ button {
   padding: 0;
 }
 
+.cv {
+  transition: .5s ease ;
+}
+
+.projects {
+  transition: .5s ease;
+}
+
+.projects:hover {
+  background-color: var(--red);
+  color: white;
+}
+
 .cv:hover {
-  
+  background-color: red;
 }
 
 .project-text {
@@ -288,8 +320,9 @@ button {
 }
 
 .projects-h1 {
-  color: red;
+  color: var(--red);
   text-align: center;
+  transition: 1s ease;
 }
 
 .project-h1-container {
@@ -297,12 +330,13 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  transition: 1s ease;
 }
 
 .ver-mas {
   margin-bottom: 0;
   text-decoration: underline;
-  color: red;
+  color: var(--red);
 }
 
 .project-title {
@@ -331,6 +365,10 @@ button {
     max-width: 100%;
   }
 
+  .nav-container {
+    width: 100%;
+    z-index: 1;
+  }
   .hero{
     display: flex;
     flex-direction: column;

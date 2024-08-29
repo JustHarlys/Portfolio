@@ -1,9 +1,9 @@
-function AboutMe() {
+function AboutMe({darkModeToggle}) {
   return (
-    <main className="about-me-container">
+    <main className="about-me-container" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>
 
     <h1 className="about-me-h1">Sobre Mi</h1>
-    <p className="about-me-p">
+    <p className="about-me-p" style={{color: darkModeToggle ? "black" : "white"}}>
       Mi nombre es Harlys De Jesús Almánzar Polanco,
       nací en la Republica Dominicana,
       me dedico a la creación y desarrollo de páginas web desde 2023.

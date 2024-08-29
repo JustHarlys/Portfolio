@@ -16,7 +16,7 @@ export default [
     {
         title : "Harlys Links",
         link : "https://harlys-links.vercel.app/",
-        concept : "Una página que alberga todos mis links",
+        concept : "Una página que contiene todos mis links",
         img : "../src/assets/harlys-links.png",
         github : "https://github.com/JustHarlys/Instagram-Link"
     },

@@ -1,5 +1,5 @@
 
-function Projects({concept, link, title, github, img}) {
+function Projects({concept, link, title, github, img, darkModeToggle}) {
   return (
   
     <div className="project-container">
@@ -19,8 +19,8 @@ function Projects({concept, link, title, github, img}) {
 
         </div>
         </div>
-        <p className="project-title">{title}</p>
-        <p className='project-concept'>{concept}</p>
+        <p className="project-title" style={{color: darkModeToggle ? "black" : "white"}}>{title}</p>
+        <p className='project-concept' style={{color: darkModeToggle ? "black" : "white"}}>{concept}</p>
     </div>
 
   )
