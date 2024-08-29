@@ -5,7 +5,7 @@ function ProjectsWindow(props) {
 
 
 
-      <p>{props.img}</p>
+      <img src={props.img} alt="" />
       <h1>{props.title}</h1>
       <p>{props.concept}</p>
       <p>{props.description}</p>
