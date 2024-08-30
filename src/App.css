@@ -16,6 +16,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat';
+  transition: 1s ease;
 
 }
 
@@ -348,6 +349,7 @@ button {
   font-weight: bold;
   font-size: 20px;
   transition: 1s ease;
+
 }
 
 .project-link {
@@ -378,6 +380,64 @@ button {
   padding: 40px;
   background-color: var(--red);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-window-img {
+  width: 32.5rem;
+  margin-top: 60px;
+}
+
+.project-description {
+  text-align: center;
+}
+
+.links-container{
+  display: flex;
+  gap: 30px;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--red);
+  gap: 20px;
+  padding: 50px;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 3.75rem;
+  transition: 0.5s ease;
+}
+
+.fa-github:hover {
+  color: #FFA100;
+}
+
+.fa-x-twitter:hover {
+  color: black;
+}
+
+.fa-instagram:hover {
+  color: rgb(208, 139, 201);
+}
+
+.fa-linkedin:hover {
+  color: #0275B4;
+}
+
+.social-name {
+  color: white;
+}
+
+.darkHome {
+  background-color: black;
+
 }
 
 
@@ -452,6 +512,10 @@ button {
     display: flex;
     padding: 15px;
 
+  }
+
+  .project-title {
+    text-align: center;
   }
 
 }

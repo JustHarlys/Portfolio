@@ -8,12 +8,20 @@ import Projects from './Components/Projects'
 import projects from './data/projects'
 import ProjectsWindow from './Components/ProjectsWindow'
 import projectsWindows from "./data/projectsWindows"
+import Footer from './Components/Footer'
+import links from './data/links'
 import { nanoid } from 'nanoid'
-import { useState } from 'react'
-
-
+import { useEffect, useState } from 'react'
 
 function App() {
+
+  useEffect(() => {
+    if (!darkModeToggle) {
+      document.body.classList.add('darkHome')
+    } else {
+      document.body.classList.remove('darkHome')
+    }
+  })
 
   const [changePages, setChangePages] = useState(true)
 
@@ -52,6 +60,15 @@ function App() {
     github={proyectoWindow.github}
     description={proyectoWindow.description}
     darkModeToggle={darkModeToggle}
+    />
+  })
+
+  const footer = links.map(foot => {
+    return <Footer 
+    key={nanoid()}
+    app={foot.app}
+    link={foot.link}
+    name={foot.name}
     />
   })
 
@@ -105,11 +122,13 @@ function App() {
 
       : 
       <>
-      <h1 className='projects-h1'>Proyectos</h1>
       {proyectosWindow}
       </> 
 
 }
+{/* 
+
+*/}
     
     </>
   )

@@ -37,6 +37,6 @@ export default [
         concept: "Aplicación web para hacer notas de viajes",
         img: "../src/assets/trip-journal.png",
         github: "https://github.com/JustHarlys/Trip-Journal",
-        description: 'Página desarrollada en JavaScript utilizando React.js, guarda los datos introducidos en una base de datos creada en SQL Server, no está desplegada, permite agregar una imagen, fecha'
+        description: 'Página desarrollada en JavaScript utilizando React.js, guarda los datos introducidos en una base de datos creada en SQL Server, no está desplegada, permite agregar una imagen, fechas de inicio y fin del viaje, datos relacionados con el mismo viaje '
     }
 ]
