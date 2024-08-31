@@ -28,7 +28,7 @@ function Hero({darkModeToggle}) {
 
       <div className="buttons">
       <button className='button cv'>Download CV</button>
-      <button className='button projects'>Projects</button>
+      {/* <button className='button projects'>Projects</button> */}
       </div>
 
       </div>
