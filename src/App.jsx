@@ -6,7 +6,6 @@ import Education from './Components/Education'
 import education from './data/education'
 import Projects from './Components/Projects'
 import projectsWindows from "./data/projectsWindows"
-import links from './data/links'
 import { nanoid } from 'nanoid'
 import { useEffect, useState } from 'react'
 
