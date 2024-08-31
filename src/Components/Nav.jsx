@@ -1,4 +1,4 @@
-function Nav({darkModeToggle, handleDarkModeToggle, changePages, handleHome, handleProjects}) {
+function Nav({darkModeToggle, handleDarkModeToggle, handleHome, handleProjects}) {
 
 
   return (
@@ -8,17 +8,10 @@ function Nav({darkModeToggle, handleDarkModeToggle, changePages, handleHome, han
         <p className="logo-text">HARLYS</p>
         <ul className="nav-items">
 
-            <li className="nav-item" onClick={handleProjects} style={
-              darkModeToggle 
-              ? {color: !changePages ? 'gray' : 'rgb(230, 71, 71)'}
-              : {color: !changePages ? 'white' : 'rgb(230, 71, 71)'}}>Home
+            <li className="nav-item">Home
             </li>
 
-            <li className="nav-item" onClick={handleHome} style={
-              darkModeToggle
-              ? {color: changePages ? 'gray' : 'rgb(230, 71, 71)'}
-              : {color: changePages ? 'white' : 'rgb(230, 71, 71)'}}>Projects
-            </li>
+            
 
             <div className="icon-container">
             <button 

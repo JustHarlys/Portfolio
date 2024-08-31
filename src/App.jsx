@@ -5,10 +5,7 @@ import AboutMe from './Components/AboutMe'
 import Education from './Components/Education'
 import education from './data/education'
 import Projects from './Components/Projects'
-import projects from './data/projects'
-import ProjectsWindow from './Components/ProjectsWindow'
 import projectsWindows from "./data/projectsWindows"
-import Footer from './Components/Footer'
 import links from './data/links'
 import { nanoid } from 'nanoid'
 import { useEffect, useState } from 'react'
@@ -23,8 +20,6 @@ function App() {
     }
   })
 
-  const [changePages, setChangePages] = useState(true)
-
   const [darkModeToggle, setDarkModeToggle] = useState(true)
 
   const courses = education.map(course => {
@@ -34,41 +29,20 @@ function App() {
     endYear={course.endDate}
     course={course.course}
     place={course.place}
-    
-    />
-  })
-  
-  const proyectos = projects.map(proyecto => {
-    return <Projects 
-    key={nanoid()}
-    title={proyecto.title}
-    concept={proyecto.concept}
-    link={proyecto.link}
-    img={proyecto.img}
-    github={proyecto.github}
-    darkModeToggle={darkModeToggle}
     />
   })
 
-  const proyectosWindow = projectsWindows.map(proyectoWindow => {
-    return <ProjectsWindow 
+  const proyectos = projectsWindows.map(proyectoWindow => {
+    return <Projects
     key={nanoid()}
     title={proyectoWindow.title}
     concept={proyectoWindow.concept}
     link={proyectoWindow.link}
+    linkRes={proyectoWindow.linkRes}
     img={proyectoWindow.img}
     github={proyectoWindow.github}
     description={proyectoWindow.description}
     darkModeToggle={darkModeToggle}
-    />
-  })
-
-  const footer = links.map(foot => {
-    return <Footer 
-    key={nanoid()}
-    app={foot.app}
-    link={foot.link}
-    name={foot.name}
     />
   })
 
@@ -78,31 +52,14 @@ function App() {
     setDarkModeToggle(prevDarkMode => !prevDarkMode)
   }
 
-  function handleHome() {
-    setChangePages(false)
-  }
-
-  function handleProjects() {
-    setChangePages(true)
-  }
 
   return (
-
-    
     <>
     <Nav 
     darkModeToggle={darkModeToggle} 
     handleDarkModeToggle={handleDarkModeToggle} 
-    changePages={changePages}
-    handleHome={handleHome}
-    handleProjects={handleProjects}
     />
-
-    {
-      changePages ?
-      <> 
-      
-      <Hero darkModeToggle={darkModeToggle}/>
+    <Hero darkModeToggle={darkModeToggle}/>
     <AboutMe darkModeToggle={darkModeToggle}/>
 
 
@@ -113,23 +70,10 @@ function App() {
 
     <div className="project-h1-container" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>
     <h1 className='projects-h1'>Proyectos</h1>
-    <a href=""><p className="ver-mas">Ver más</p></a>
     </div>
     <div className="projects-container" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>
     {proyectos}
     </div>
-      </>
-
-      : 
-      <>
-      {proyectosWindow}
-      </> 
-
-}
-{/* 
-
-*/}
-    
     </>
   )
 }

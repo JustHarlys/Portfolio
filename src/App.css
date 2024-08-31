@@ -76,8 +76,6 @@ button {
   border-radius: 400px;
 }
 
-
-
 .logo-text {
   cursor: pointer;
   color: red;
@@ -92,6 +90,7 @@ button {
   list-style: none;
   cursor: pointer;
   transition: 0.5s ease;
+  color: var(--red);
 }
 
 .hero {
@@ -109,6 +108,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  text-align: center;
 }
 
 .buttons {
@@ -157,6 +157,11 @@ button {
 .hero-img {
   width: 270px;
   border-radius: 200px;
+  transition: 0.5s ease;
+}
+
+.hero-img:hover {
+  filter: drop-shadow(0 0 2em var(--red));
 }
 
 .about-me-container {
@@ -194,6 +199,11 @@ button {
   gap: 20px;
   place-items: center;
   transition: 1s ease;
+}
+
+.course-container:hover {
+  filter: drop-shadow(0 0 1em var(--red));
+  transition: 0.5s ease;
 }
 
 
@@ -288,6 +298,7 @@ button {
   display: block;
   width: 100%;
   height: auto;
+  transition: 0.5s ease;
 }
 
 .overlay {
@@ -336,6 +347,11 @@ button {
 
 .button-content > * {
   margin: 0;
+}
+
+.fa-globe:hover {
+  color: rgb(21, 106, 218);
+  transition: 0.5s ease;
 }
 
 .project-concept {
@@ -400,22 +416,29 @@ button {
   gap: 30px;
 }
 
-.social-media-container {
+.social-media-hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--red);
-  gap: 20px;
-  padding: 50px;
+  gap: 10px;
 }
 
 .fa-brands {
-  color: white;
-  font-size: 3.75rem;
   transition: 0.5s ease;
 }
 
-.falll:hover {
+.fa-brands:hover {
+  filter: drop-shadow(0 0 2em var(--red));
+}
+
+.social-links {
+  font-size: 2.5em;
+  color: black;
+  padding: 10px;
+  border-radius: 400px;
+  background-color: white;
+}
+
+.fa-github:hover {
   color: #FFA100;
 }
 
@@ -424,7 +447,7 @@ button {
 }
 
 .fa-instagram:hover {
-  color: rgb(208, 139, 201);
+  color: rgb(247, 124, 206);
 }
 
 .fa-linkedin:hover {
@@ -437,7 +460,10 @@ button {
 
 .darkHome {
   background-color: black;
+}
 
+.btn-responsive {
+  display: none;
 }
 
 
@@ -517,6 +543,27 @@ button {
   .project-title {
     text-align: center;
   }
+
+  .overlay {
+    display: none;
+  }
+
+  .btn-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .globe-responsive {
+    color: black;
+  }
+
+  .text-responsive {
+    color: black;
+  }
+
+
 
 }
 
