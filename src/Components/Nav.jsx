@@ -1,4 +1,4 @@
-function Nav({darkModeToggle, handleDarkModeToggle, handleHome, handleProjects}) {
+function Nav({darkModeToggle, handleDarkModeToggle}) {
 
 
   return (
@@ -8,11 +8,9 @@ function Nav({darkModeToggle, handleDarkModeToggle, handleHome, handleProjects})
         <p className="logo-text">HARLYS</p>
         <ul className="nav-items">
 
-            <li className="nav-item">Home
-            </li>
+            <li className="nav-item">Home</li>
 
-            
-
+          
             <div className="icon-container">
             <button 
             className={darkModeToggle ? 'toggle-button-dark button-toggle' : 'toggle-button-light button-toggle'}  
