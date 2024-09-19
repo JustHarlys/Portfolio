@@ -15,7 +15,6 @@ function Projects({concept, link, title, github, img, description, linkRes}) {
   return (
   
     <div className="project-container">
-
         <div className="project-img-wrapper">
         <img src={img} alt="Imagen de ejemplo" className='project-img' />
 
