@@ -2,9 +2,13 @@ import Me from '../assets/me.jfif'
 import links from '../data/links'
 import Footer from './Footer'
 import { nanoid } from 'nanoid'
+import { DarkModeContext} from "../Context/DarkMode"
+import { useContext } from "react"
 
 
-function Hero({darkModeToggle}) {
+function Hero() {
+
+  const {darkModeToggle} = useContext(DarkModeContext)
 
   const footer = links.map(foot => {
     return <Footer 

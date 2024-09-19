@@ -1,5 +1,9 @@
-function Nav({darkModeToggle, handleDarkModeToggle, handleHome, handleProjects}) {
+import { DarkModeContext} from "../Context/DarkMode"
+import { useContext } from "react"
 
+function Nav() {
+
+  const{darkModeToggle, handleDarkModeToggle} = useContext(DarkModeContext)
 
   return (
     <>

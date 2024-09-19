@@ -1,4 +1,10 @@
-function AboutMe({darkModeToggle}) {
+import { DarkModeContext} from "../Context/DarkMode"
+import { useContext } from "react"
+
+function AboutMe() {
+
+  const {darkModeToggle} = useContext(DarkModeContext)
+
   return (
     <main className="about-me-container" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>
 

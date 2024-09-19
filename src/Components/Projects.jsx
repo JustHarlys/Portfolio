@@ -1,6 +1,10 @@
 import { useState } from "react"
+import { DarkModeContext} from "../Context/DarkMode"
+import { useContext } from "react"
 
-function Projects({concept, link, title, github, img, darkModeToggle, description, linkRes}) {
+function Projects({concept, link, title, github, img, description, linkRes}) {
+
+  const {darkModeToggle} = useContext(DarkModeContext)
 
   const [details, setDetails] = useState(false)
 
