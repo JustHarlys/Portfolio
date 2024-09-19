@@ -3,6 +3,7 @@ import tenziesGameImg from '/src/assets/tenzies-game.png';
 import harlysLinksImg from '/src/assets/harlys-links.png';
 import weightTrackerImg from '/src/assets/weight-tracker.png';
 import tripJournalImg from '/src/assets/trip-journal.png';
+import shoppingCartImg from '/src/assets/shopping-cart.png'
 
 export default [
     {
@@ -49,5 +50,15 @@ export default [
         img: tripJournalImg,
         github: "https://github.com/JustHarlys/Trip-Journal",
         description: 'Página desarrollada en JavaScript utilizando React.js, guarda los datos introducidos en una base de datos creada en SQL Server, no está desplegada, permite agregar una imagen, fechas de inicio y fin del viaje, datos relacionados con el mismo viaje '
+    },
+    {
+        title: "Shopping Cart",
+        link: "https://harlys-shoppping-cart.vercel.app/",
+        linkRes: "https://harlys-shoppping-cart.vercel.app/",
+        concept: "Simulacion de un carrito de compras",
+        img: shoppingCartImg,
+        github: "https://github.com/JustHarlys/Shopping-Cart",
+        description: "Pagina para simular un carrito de compras de un E-commerce totalmente funcional, desarrollada en JavaScript usando el framework de React.js, se simula una base de datos con el localStorage, desplegada en Vercel"
+
     }
 ];
