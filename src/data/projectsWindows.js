@@ -59,6 +59,5 @@ export default [
         img: shoppingCartImg,
         github: "https://github.com/JustHarlys/Shopping-Cart",
         description: "Pagina para simular un carrito de compras de un E-commerce totalmente funcional, desarrollada en JavaScript usando el framework de React.js, se simula una base de datos con el localStorage, desplegada en Vercel"
-
     }
 ];
