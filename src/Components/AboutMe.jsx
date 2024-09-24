@@ -10,7 +10,7 @@ function AboutMe() {
 
     <h1 className="about-me-h1">Sobre Mi</h1>
     <p className="about-me-p" style={{color: darkModeToggle ? "black" : "white"}}>
-      Mi nombre es Harlys De Jesús Almánzar Polanco,
+      Mi nombre es Harlys Almánzar,
       nací en la Republica Dominicana,
       me dedico a la creación y desarrollo de páginas web desde 2023.
       Estudio la carrera de Ingeniería de Software desde el 2020.
