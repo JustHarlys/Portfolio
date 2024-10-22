@@ -4,6 +4,7 @@ import harlysLinksImg from '/src/assets/harlys-links.png';
 import weightTrackerImg from '/src/assets/weight-tracker.png';
 import tripJournalImg from '/src/assets/trip-journal.png';
 import shoppingCartImg from '/src/assets/shopping-cart.png'
+import personalBlog from '/src/assets/personal-blog.png'
 
 export default [
     {
@@ -60,5 +61,14 @@ export default [
         github: "https://github.com/JustHarlys/Shopping-Cart",
         description: "Pagina para simular un carrito de compras de un E-commerce totalmente funcional, desarrollada en JavaScript usando el framework de React.js, se simula una base de datos con el localStorage, desplegada en Vercel"
 
+    },
+    {
+        title: "Personal Blog",
+        link: "https://harlys-blog.vercel.app/",
+        linkRes: "https://harlys-blog.vercel.app/",
+        concept: "Blog personal para publicaciones",
+        img: personalBlog,
+        github: "https://github.com/JustHarlys/Blog",
+        description: "Pagina de blog creada para almacenar entradas customizadas con cara a leer mis experiencias en diferentes categorias preseleccionadas, desarrollada en JavaScript utilizando React.js, con base de datos en MongoDB, desplegada en Vercel para el frontend y Railway para el backend"
     }
 ];
