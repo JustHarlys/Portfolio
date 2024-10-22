@@ -60,6 +60,7 @@ export default [
         img: shoppingCartImg,
         github: "https://github.com/JustHarlys/Shopping-Cart",
         description: "Pagina para simular un carrito de compras de un E-commerce totalmente funcional, desarrollada en JavaScript usando el framework de React.js, se simula una base de datos con el localStorage, desplegada en Vercel"
+<<<<<<< HEAD
 
     },
     {
@@ -70,5 +71,7 @@ export default [
         img: personalBlog,
         github: "https://github.com/JustHarlys/Blog",
         description: "Pagina de blog creada para almacenar entradas customizadas con cara a leer mis experiencias en diferentes categorias preseleccionadas, desarrollada en JavaScript utilizando React.js, con base de datos en MongoDB, desplegada en Vercel para el frontend y Railway para el backend"
+=======
+>>>>>>> a8200471af61f2e6b4116fc9e5a0ff2d8c24032e
     }
 ];
