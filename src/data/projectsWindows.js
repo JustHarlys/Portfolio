@@ -5,6 +5,7 @@ import weightTrackerImg from '/src/assets/weight-tracker.png';
 import tripJournalImg from '/src/assets/trip-journal.png';
 import shoppingCartImg from '/src/assets/shopping-cart.png'
 import personalBlog from '/src/assets/personal-blog.png'
+import todoList from '/src/assets/Todo.2.png'
 
 export default [
     {
@@ -69,5 +70,15 @@ export default [
         img: personalBlog,
         github: "https://github.com/JustHarlys/Blog",
         description: "Pagina de blog creada para almacenar entradas customizadas con cara a leer mis experiencias en diferentes categorias preseleccionadas, desarrollada en JavaScript utilizando React.js, con base de datos en MongoDB, desplegada en Vercel para el frontend y Railway para el backend"
+    },
+    {
+        title: "To do list",
+        link: "https://harlys-todo.vercel.app/",
+        linkRes: "https://harlys-todo.vercel.app/",
+        concept: "To do list básico",
+        img: todoList,
+        github: "https://github.com/JustHarlys/Todo",
+        description: "Página realizada para un Todo list bastante básico, permite agregar los items que uno quiera y necesite con un diseño fácil de entender, no requiere de base de datos ya que es demostración, al seleccionar un item te da la opción de eliminarlo, hecho en React.js, desplegado en Vercel"
+    
     }
 ];
