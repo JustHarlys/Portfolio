@@ -35,6 +35,18 @@ export default [
         endDate : "Cursando",
         course : "React Js",
         place : "Autodidacta"
+    },
+    {
+        startYear: "2024",
+        endDate: "2024",
+        course: "C# Intermedio",
+        place: "ITLA"
+    },
+    {
+        startYear: "2024",
+        endDate: "2024",
+        course: "C# Avanzado",
+        place: "ITLA"
     }
 
 ]
