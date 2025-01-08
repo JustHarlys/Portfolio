@@ -31,7 +31,7 @@ function Hero() {
       </div>
 
       <div className="buttons">
-      <button className='button cv'>Download CV</button>
+      <button className='button cv'>Descargar CV (No disponible)</button>
       </div>
 
       </div>

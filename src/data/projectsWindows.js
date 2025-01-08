@@ -6,10 +6,13 @@ import tripJournalImg from '/src/assets/trip-journal.png';
 import shoppingCartImg from '/src/assets/shopping-cart.png'
 import personalBlog from '/src/assets/personal-blog.png'
 import todoList from '/src/assets/Todo.2.png'
+import apod from '/src/assets/apod.png'
+import bakeryTemplate from '/src/assets/bakery-template.png'
+import mlbSimulator from '/src/assets/mlb-simulator.png'
 
 export default [
     {
-        title : "Let it Out",
+        title : "Let it Out (Despliegue de base de datos no funciona)",
         link : "https://letitout.vercel.app/",
         linkRes : "https://letitout.vercel.app/",
         concept : "Una simple página anónima que funciona para dejar experiencias y comentarios sin que nadie sepa tu identidad",
@@ -63,7 +66,7 @@ export default [
         description: "Pagina para simular un carrito de compras de un E-commerce totalmente funcional, desarrollada en JavaScript usando el framework de React.js, se simula una base de datos con el localStorage, desplegada en Vercel"
     },
     {
-        title: "Personal Blog",
+        title: "Personal Blog (Despliegue de base de datos no funciona)",
         link: "https://harlys-blog.vercel.app/",
         linkRes: "https://harlys-blog.vercel.app/",
         concept: "Blog personal para publicaciones",
@@ -79,6 +82,33 @@ export default [
         img: todoList,
         github: "https://github.com/JustHarlys/Todo",
         description: "Página realizada para un Todo list bastante básico, permite agregar los items que uno quiera y necesite con un diseño fácil de entender, no requiere de base de datos ya que es demostración, al seleccionar un item te da la opción de eliminarlo, hecho en React.js, desplegado en Vercel"
+    },
+    {
+        title: "Astronomy Picture of the Day",
+        link: "https://harlys-apod.vercel.app/",
+        linkRes: "https://harlys-apod.vercel.app/",
+        concept: "Foto astronomica del dia",
+        img: apod,
+        github: "https://github.com/JustHarlys/APOD",
+        description: "Página que muestra la foto astronomica del día elegida por la nasa, utilizando su API y haciendo un llamado a la misma, desarrollado en React y desplegado en vercel."
+    },
+    {
+        title: "Bakery Template",
+        link: "https://bakery-template-plum.vercel.app/",
+        linkRes: "https://bakery-template-plum.vercel.app/",
+        concept: "Template de una pastelería",
+        img: bakeryTemplate,
+        github: "https://github.com/JustHarlys/Bakery-Template",
+        description: "Modelo de una página web para fines de una repostería o pastelería, diseño responsivo y un modo oscuro y claro. Desarrollado en React.js y desplegado en vercel."
+    },
+    {
+        title: "MLB Simulator",
+        link: "https://mlb-simulator.vercel.app/",
+        linkRes: "https://mlb-simulator.vercel.app/",
+        concept: "Simulador de un juego de baseball",
+        img: mlbSimulator,
+        github: "https://github.com/JustHarlys/Sports-API",
+        description: "Simulación de un juego de MLB mediante el llamado de la API de BallDontLie, cuenta con control de carreras y outs, extra-innings y walk offs, desarrollado en React.js y desplegado en vercel."
     
     }
 ];

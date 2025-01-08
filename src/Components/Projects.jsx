@@ -46,7 +46,7 @@ function Projects({concept, link, title, github, img, description, linkRes}) {
         </div>
         </div>
 
-        <p className="project-title" style={{color: darkModeToggle ? "black" : "white"}}>{title}</p>
+        <p className="project-title" style={{color: darkModeToggle ? "black" : "white", textAlign: "center"}}>{title}</p>
         <p className='project-concept' style={{color: darkModeToggle ? "black" : "white"}}>{concept}</p>
         {details && <p className="project-description" style={{color: darkModeToggle ? "black" : "white"}}>{description}</p>}
 
