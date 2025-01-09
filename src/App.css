@@ -140,12 +140,16 @@ button {
 
 .hero-p {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   transition: 1s ease;
-
 }
 
 .hero-p-2 {
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.hero-p-3 {
   font-weight: bold;
   transition: 1s ease;
 }
@@ -436,23 +440,18 @@ button {
   color: black;
   padding: 10px;
   border-radius: 400px;
-  background-color: white;
 }
 
 .fa-github:hover {
   color: #FFA100;
 }
 
-.fa-x-twitter:hover {
-  color: black;
+.fa-whatsapp:hover {
+  color: green;
 }
 
 .fa-instagram:hover {
   color: rgb(247, 124, 206);
-}
-
-.fa-linkedin:hover {
-  color: #0275B4;
 }
 
 .social-name {
