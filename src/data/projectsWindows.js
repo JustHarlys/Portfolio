@@ -2,7 +2,6 @@ import letItOutImg from '/src/assets/let-it-out.png';
 import tenziesGameImg from '/src/assets/tenzies-game.png';
 import harlysLinksImg from '/src/assets/harlys-links.png';
 import weightTrackerImg from '/src/assets/weight-tracker.png';
-import tripJournalImg from '/src/assets/trip-journal.png';
 import shoppingCartImg from '/src/assets/shopping-cart.png'
 import personalBlog from '/src/assets/personal-blog.png'
 import todoList from '/src/assets/Todo.2.png'
@@ -12,7 +11,7 @@ import mlbSimulator from '/src/assets/mlb-simulator.png'
 
 export default [
     {
-        title : "Let it Out (Despliegue de base de datos no funciona)",
+        title : "Let it Out (Despliegue de base de datos caducado)",
         link : "https://letitout.vercel.app/",
         linkRes : "https://letitout.vercel.app/",
         concept : "Una simple página anónima que funciona para dejar experiencias y comentarios sin que nadie sepa tu identidad",
@@ -48,15 +47,6 @@ export default [
         description: 'Página desarrollada en JavaScript utilizando React.js, guarda los datos en una base de datos creada en SQL Server'
     },
     {
-        title: "Trip Journal",
-        link: "",
-        linkRes: "",
-        concept: "Aplicación web para hacer notas de viajes",
-        img: tripJournalImg,
-        github: "https://github.com/JustHarlys/Trip-Journal",
-        description: 'Página desarrollada en JavaScript utilizando React.js, guarda los datos introducidos en una base de datos creada en SQL Server, no está desplegada, permite agregar una imagen, fechas de inicio y fin del viaje, datos relacionados con el mismo viaje '
-    },
-    {
         title: "Shopping Cart",
         link: "https://harlys-shoppping-cart.vercel.app/",
         linkRes: "https://harlys-shoppping-cart.vercel.app/",
@@ -66,13 +56,13 @@ export default [
         description: "Pagina para simular un carrito de compras de un E-commerce totalmente funcional, desarrollada en JavaScript usando el framework de React.js, se simula una base de datos con el localStorage, desplegada en Vercel"
     },
     {
-        title: "Personal Blog (Despliegue de base de datos no funciona)",
+        title: "Personal Blog (Despliegue de base de datos caducado)",
         link: "https://harlys-blog.vercel.app/",
         linkRes: "https://harlys-blog.vercel.app/",
         concept: "Blog personal para publicaciones",
         img: personalBlog,
         github: "https://github.com/JustHarlys/Blog",
-        description: "Pagina de blog creada para almacenar entradas customizadas con cara a leer mis experiencias en diferentes categorias preseleccionadas, desarrollada en JavaScript utilizando React.js, con base de datos en MongoDB, desplegada en Vercel para el frontend y Railway para el backend"
+        description: "Pagina de blog creada para almacenar entradas customizadas con cara a leer mis experiencias en diferentes categorias preseleccionadas, desarrollada en JavaScript utilizando React.js y Node.js, con base de datos en MongoDB, desplegada en Vercel para el frontend y Railway para el backend"
     },
     {
         title: "To do list",

@@ -25,7 +25,7 @@ function Hero() {
       <div className="hero-text">
       <p className='hero-p' style={{color: darkModeToggle ? "black" : "white"}}>Mi nombre es <span className="name">Harlys Almánzar</span></p>
       <p className='hero-p-2' style={{color: darkModeToggle ? "black" : "white"}}> <span className="name">Full Stack Developer</span> en Republica Dominicana</p>
-      <p className='hero-p-3'>Contáctame</p>
+      <p className='hero-p-3' style={{color: darkModeToggle ? "black" : "white"}}>Contáctame</p>
       <div className='social-media-hero'>
         {footer}
       </div>

@@ -1,8 +1,8 @@
 import Nav from './Nav'
 import Hero from './Hero'
 import AboutMe from './AboutMe'
-import Education from './Education'
-import education from '../data/education'
+import Skills from './Skills'
+import skills from '../data/skills'
 import Projects from './Projects'
 import projectsWindows from "../data/projectsWindows"
 import { nanoid } from 'nanoid'
@@ -23,15 +23,14 @@ export function DarkModeComponent() {
 
 
 
-  const courses = education.map(course => {
-    return <Education 
-    key={nanoid()} 
-    startYear={course.startYear}
-    endYear={course.endDate}
-    course={course.course}
-    place={course.place}
+  const courses = skills.map((course) => (
+    <Skills 
+        key={nanoid()} 
+        tech={course.course} 
+        logo={course.logo} 
+        svg={course.svg} 
     />
-  })
+));
 
   const proyectos = projectsWindows.map(proyectoWindow => {
     return <Projects
@@ -55,7 +54,7 @@ export function DarkModeComponent() {
     <AboutMe/>
 
 
-    <h1 className="education-h1" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>Educación</h1>
+    <h1 className="education-h1" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>Skills</h1>
     <main className="education-container" style={{backgroundColor: darkModeToggle ? "white" : "black"}}>
     {courses}
     </main>
